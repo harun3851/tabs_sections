@@ -9,10 +9,6 @@ body{
 img{
     display: block;
     width: 100%;
-    border-radius: 0.5rem;
-    object-fit: cover;
-    height: 30rem;
-    margin:2rem;
 }
 .section-center{
     width: 90vw;
@@ -45,3 +41,31 @@ border-radius:5re;
 .button:nth-child(3){
     border-top-right-radius: 0.5rem;
 }
+.button:hover:not(.live){
+     background-color: #F48484;
+     color: white;
+}
+.tabs-content{
+    padding: 2rem 1.5rem;
+}
+.content{
+    display: none;
+}
+
+.button.live{
+    background: #09e757;
+}
+.content.live{
+    display: block;
+}
+@media (min-width:992px) {
+    .image{
+        margin-bottom:0;
+    }
+    .section-center{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
