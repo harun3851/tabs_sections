@@ -5,10 +5,15 @@ body{
     background:#EAC7C7;
     color:#0081C9;
 }
-
-img{
+.image{
+    margin-bottom:2rem;
+}
+img {
     display: block;
-    width: 100%;
+  width: 100%;
+    border-radius: 0.5rem;
+  object-fit: cover;
+  height: 30rem;
 }
 .section-center{
     width: 90vw;
@@ -20,16 +25,10 @@ img{
 
 .tabs{
 background:#F48484;
-border-radius:5re;
+border-radius:0.5rem;
+grid-template-rows: auto 1fr;
 }
-.button{
-    padding: 1 rem 0;
-    border: none;
-    font-size: 1 rem;
-    background: #09e757;
-    cursor: pointer;
-    letter-spacing: .25rem;
-}
+
 .btn-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -40,6 +39,15 @@ border-radius:5re;
 }
 .button:nth-child(3){
     border-top-right-radius: 0.5rem;
+}
+.button{
+    padding: 1 rem 0;
+    border: none;
+    font-size: 1 rem;
+    background: #09e757;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    letter-spacing: .25rem;
 }
 .button:hover:not(.live){
      background-color: #F48484;
